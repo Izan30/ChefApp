@@ -20,7 +20,7 @@
             android:layout_height="200dp"
             android:layout_gravity="center"
             android:layout_margin="20dp"
-            android:background="@drawable/bordes_seleccione_imagen_crear_receta"
+            android:background="@drawable/bordes_foto_recetas_card_view"
             android:clipToOutline="true"
             android:contentDescription="@string/content_description_imagen_receta"
             android:visibility="gone"

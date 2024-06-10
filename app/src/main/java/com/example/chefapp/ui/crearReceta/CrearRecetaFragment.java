@@ -1,5 +1,6 @@
 package com.example.chefapp.ui.crearReceta;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
@@ -82,6 +83,7 @@ public class CrearRecetaFragment extends Fragment {
     /**
      * Monta el selector de imágenes.
      */
+    @SuppressLint("DiscouragedApi")
     private void montarImagenPicker() {
         imagenPickerLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
             if (result.getResultCode() == Activity.RESULT_OK) {
@@ -217,7 +219,6 @@ public class CrearRecetaFragment extends Fragment {
      * Obtiene los datos de la receta.
      */
     private void obtenerDatosReceta() {
-        //imagenSeleccionada = fotoReceta.getDrawable();
         textoNombreReceta = nombre.getText().toString();
         textoDescripcionReceta = descripcion.getText().toString();
         textoDificultadReceta = dificultad.getText().toString();
