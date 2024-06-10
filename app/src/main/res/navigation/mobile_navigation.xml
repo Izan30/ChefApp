@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_inicio">
+
+    <fragment
+        android:id="@+id/navigation_inicio"
+        android:name="com.example.chefapp.ui.inicio.InicioFragment"
+        android:label="@string/titulo_inicio"
+        tools:layout="@layout/fragment_inicio" />
+
+    <fragment
+        android:id="@+id/navigation_crear_receta"
+        android:name="com.example.chefapp.ui.crearReceta.CrearRecetaFragment"
+        android:label="@string/titulo_crear_receta"
+        tools:layout="@layout/fragment_crear_receta" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.chefapp.ui.cronometro.CronometroFragment"
+        android:label="@string/titulo_cronometro"
+        tools:layout="@layout/fragment_cronometro" />
+</navigation>

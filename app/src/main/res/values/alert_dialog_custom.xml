@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AlertDialogCustom" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:background">@color/lemon_chiffon</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="fontFamily">@font/amarante_regular</item>
+    </style>
+</resources>

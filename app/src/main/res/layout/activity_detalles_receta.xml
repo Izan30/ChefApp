@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detallesRecetaActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.inicio.detallesReceta.DetallesReceta">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDetalleRecetasActivityCabecera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/selective_yellow"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imagenReceta"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/bordes_foto_recetas_card_view"
+            android:clipToOutline="true"
+            android:contentDescription="@string/content_description_imagen_receta"
+            android:src="@drawable/ic_launcher_background"
+            tools:ignore="UnusedAttribute,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/nombreReceta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Nombre de la receta"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/descripcionReceta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:justificationMode="inter_word"
+            android:text="Descripcion de la receta"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="italic"
+            tools:ignore="HardcodedText,UnusedAttribute" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutDetalleRecetasActivityCuerpo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lemon_chiffon"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/dificultadReceta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/text_dificultad_detalles_receta"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutDetalleRecetasActivityComensalesTiempo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textComensalesReceta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_comensales_detalles_receta"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/numComensales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="6dp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/separadorComensalesTiempo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/separador_receta_card_view"
+                    android:textColor="@color/selective_yellow"
+                    android:textSize="18sp"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textTiempoReceta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_tiempo_detalles_receta"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/numTiempoReceta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="6dp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/unidadTiempoReceta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="2dp"
+                    android:text="@string/text_min_detalles_receta"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/caracteristicasAdicionalesReceta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/text_caracteristicas_adicionales_detalles_receta"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/listaCaracteristicasAdicionalesReceta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:justificationMode="inter_word"
+                android:text="Lista de características adicionales"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+
+            <TextView
+                android:id="@+id/ingredientesReceta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/text_ingredientes_detalles_receta"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/listaIngredientesReceta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:justificationMode="inter_word"
+                android:text="Lista de ingredientes"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+
+            <TextView
+                android:id="@+id/pasosReceta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/text_pasos_detalles_receta"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/listaPasosReceta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:justificationMode="inter_word"
+                android:text="Lista de pasos"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

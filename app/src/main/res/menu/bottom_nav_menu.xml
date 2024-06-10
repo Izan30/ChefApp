@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_inicio"
+        android:icon="@drawable/icono_fragmento_inicio"
+        android:title="@string/titulo_inicio" />
+
+    <item
+        android:id="@+id/navigation_crear_receta"
+        android:icon="@drawable/icono_fragmento_crear_receta"
+        android:title="@string/titulo_crear_receta" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/icono_fragmento_cronometro"
+        android:title="@string/titulo_cronometro" />
+
+</menu>
